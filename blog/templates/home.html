@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="Blog" class="no-js" lang="{{ LANGUAGE_CODE }}">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Uber Start</title>
+
+    <script src="{{ STATIC_URL }}js/libs/angular/angular.min.js"></script>
+    <script src="{{ STATIC_URL }}js/libs/angular/angular-resource.min.js"></script>
+    <script src="{{ STATIC_URL }}js/libs/angular/angular-cookies.min.js"></script>
+    <script src="{{ STATIC_URL }}js/libs/ui-bootstrap-tpls-0.3.0.min.js"></script>
+    <script src="{{ STATIC_URL }}js/app/app.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ STATIC_URL }}theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{ STATIC_URL }}theme/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="{{ STATIC_URL }}theme/css/agency.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="{{ STATIC_URL }}js/app/app.js"></script>
+
+
+</head>
+
+<body id="page-top" class="index"  ng-init="initialize('{{ user.is_authenticated }}')">
+    <ng-view view-state></ng-view>
+    <!-- jQuery -->
+    <script src="{{ STATIC_URL }}theme/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ STATIC_URL }}theme/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="{{ STATIC_URL }}theme/js/jqBootstrapValidation.js"></script>
+    <script src="{{ STATIC_URL }}theme/js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="{{ STATIC_URL }}theme/js/agency.min.js"></script>
+    <script src="{{ STATIC_URL }}js/app/controllers/app-controller.js"></script>
+    <script src="{{ STATIC_URL }}js/app/controllers/home-controller.js"></script>
+    <script src="{{ STATIC_URL }}js/app/controllers/signin-controller.js"></script>
+    <script src="{{ STATIC_URL }}js/app/controllers/employeesignin-controller.js"></script>
+    <script src="{{ STATIC_URL }}js/app/controllers/employersignin-controller.js"></script>
+    <script src="{{ STATIC_URL }}js/app/controllers/feed-controller.js"></script>
+    <script src="{{ STATIC_URL }}js/app/controllers/posts-controller.js"></script>
+    <script src="{{ STATIC_URL }}js/app/services/app-service.js"></script>
+    <script src="{{ STATIC_URL }}js/app/services/posts-service.js"></script>
+    <script src="{{ STATIC_URL }}js/app/services/tags-service.js"></script>
+    <script src="{{ STATIC_URL }}js/app/directives/directives.js"></script>
+    <script src="{{ STATIC_URL }}js/app/filters/filters.js"></script>
+
+</body>
+
+</html>

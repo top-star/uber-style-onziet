@@ -1,0 +1,208 @@
+/* tags */
+.tag {
+    cursor: pointer;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 7px;
+    overflow: hidden;
+    padding-right: 16px;
+    padding-left: 16px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    -webkit-transition: 0.14s linear;
+    -moz-transition: 0.14s linear;
+    -o-transition: 0.14s linear;
+    transition: 0.14s linear;
+    -webkit-backface-visibility: hidden;
+}
+
+.tag:hover {
+    color: #ffffff;
+    padding-left: 8px;
+    padding-right: 24px;
+}
+
+.tag:hover .remove-tag {
+    opacity: 1;
+    display: block;
+}
+
+.remove-tag {
+    bottom: 0;
+    cursor: pointer;
+    opacity: 0;
+    padding: 5px 5px 0 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    text-decoration: none;
+    z-index: 2;
+    display: none;
+}
+
+.tipper {
+    position: relative;
+}
+
+a.remove-tipper {
+    left: 230px;
+    position: absolute;
+    top: 5px;
+}
+
+.tag-add {
+    background-color: #d6dbdf;
+    border-radius: 3px !important;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 2px 6px !important;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden;
+}
+
+.tag-add:hover {
+    background-color: #1abc9c !important;
+}
+
+nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.ng-scope {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/**
+*   Sign In page
+**/
+div#signin-div {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+div#signin-div div#subtitle {
+    margin-bottom: 15px;
+}
+div#signin-div div#description {
+    margin-bottom: 25px;
+}
+div#signin-div div#title-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: ff-clan-web-pro,"Helvetica Neue",Helvetica,sans-serif!important;
+    font-weight: 400;
+    font-size: 4rem;  
+}
+div#signin-div div.layout_half {
+    width: 40%!important;
+    display: inline-block;
+    margin-right: 5%;
+}
+div#signin-div div.top-line {
+    width: 8%;
+    height: 2px;
+    background: lightgray;
+    margin-bottom: 15px;
+}
+div#signin-div div.subitem1{
+    font-family: ff-clan-web-pro,"Helvetica Neue",Helvetica,sans-serif!important;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.33333;
+    margin-bottom: 10px;
+}
+div#signin-div div#button div.layout_half button.btn {
+    background-color: #12939A;
+}
+div#signin-div div#button div.layout_half button.btn label{
+    color: white;
+    margin-bottom: 0px;
+}
+/**
+*   Employee signin stylesheet
+**/
+div#employeesignin-div.ng-scope{
+    margin: 0 auto;
+    max-width: 440px;
+    text-align: center !important;
+    padding-top: 32px !important;
+    display: block;
+    position: relative;
+    font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.71429;
+}
+div#employeesignin-div.ng-scope div#title-div{
+    font-size: 2.5em;
+}
+#employeesignin-div > div.subtitle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#employeesignin-div > div.subtitle > div {
+    width: 35%;
+    height: 1px;
+    background: lightgray;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+}
+#employeesignin-div > div.container{
+    margin: 0 auto;
+    max-width: 440px;
+    display: inline;
+    text-align: left;
+}
+#employeesignin-div h1 {
+    font-size: 20px;
+}
+#employeesignin-div > div.container  form {
+    text-align: left;
+}
+#employeesignin-div > div.container > div form button {
+    background-color: #12939A;
+    color: white;
+    text-align: left;
+}
+/**
+*   Employee signin stylesheet
+**/
+#employeesignin-div > div.container > div > div:nth-child(2) > h1 {
+    font-size: 20px;
+}
+div.social-wrap button {
+    padding-right: 45px;
+    height: 35px;
+    background: none;
+    border: none;
+    display: block;
+    background-size: 35px 35px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    color: white;
+    font-family:"Merriweather Sans", sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 205px;
+    border-bottom: 2px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-shadow: 0 4px 2px -2px gray;
+    text-shadow: rgba(0, 0, 0, .5) -1px -1px 0;
+}
+button#facebook {
+    border-color: #2d5073;
+    background-color: #3b5998;
+    background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+}
+#employeesignin-div > div.container > div > div:nth-child(2) > form > div.col-sm-12 {
+    padding: 0px;
+}
